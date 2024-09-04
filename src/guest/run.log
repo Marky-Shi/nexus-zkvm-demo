@@ -1,0 +1,28 @@
+cd guest && cargo nexus prove 
+Setting up public parameters for IVC ... 14.7s
+    Finished in 14.7s
+  Loading public parameters ... 3.8s
+ Finished in 3.8s
+  Computing step 0 ... 834ms
+  Computing step 1 ... 973ms
+  Computing step 2 ... 973ms
+  Computing step 3 ... 1.0s
+  Computing step 4 ... 988ms
+  Computing step 5 ... 1.0s
+  Computing step 6 ... 1.0s
+  Computing step 7 ... 1.0s
+  Computing step 8 ... 1.0s
+  Computing step 9 ... 1.0s
+  Computing step 10 ... 1.0s
+  Computing step 11 ... 1.0s
+  Computing step 12 ... 995ms
+  Computing step 13 ... 1.0s
+  Saving proof ... 25ms
+Finished in 25ms
+
+
+cargo nexus verify
+ Loading public parameters ... 3.9s
+ Finished in 3.9s
+  Verifying proof ... 673ms
+   Finished in 673ms
