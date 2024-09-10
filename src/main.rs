@@ -4,6 +4,8 @@ use nexus_sdk::{
     Local, Prover, Verifiable,
 };
 
+use nexus_core::prover::nova::pp::show_pp;
+
 const PACKAGE: &str = "guest";
 
 fn generate_pp_and_compile() -> (PP, Nova<Local>) {
@@ -28,6 +30,10 @@ fn main() {
 
     let start = Instant::now();
     let (pp, prover) = generate_pp_and_compile();
+    
+    println!("show pp------------->");
+
+    show_pp(&pp);    
     let duration = start.elapsed();
     println!(
         "Time taken to generate PP and compile: {:.2} seconds",
