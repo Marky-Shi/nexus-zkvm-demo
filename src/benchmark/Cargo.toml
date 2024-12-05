@@ -1,15 +1,13 @@
 [package]
-name = "benchmarks"
+name = "benchmark"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 nexus-sdk = { git = "https://github.com/nexus-xyz/nexus-zkvm.git", tag = "0.2.3", version = "0.2.3" }
-nexus-core = { git = "https://github.com/nexus-xyz/nexus-zkvm.git" , tag = "0.2.3", version = "0.2.3" }
 
 [workspace]
-members = [ 
-    "src/benchmark", 
+members = [
     "src/guest"
 ]
 
